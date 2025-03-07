@@ -1,5 +1,6 @@
 const { MongoClient, ServerApiVersion } = require('mongodb');
 const express = require('express')
+const movies = require('./movieData.json')
 const cors = require('cors')
 require('dotenv').config()
 
@@ -28,6 +29,16 @@ async function run() {
   try {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
+
+    app.get('/movies', (req, res) => {
+      res.send(movies);
+    })
+    app.get('/movies/:id', (req, res) =>{
+      const id = parseInt(req.params.id);
+      const movie = movies.find(mov => mov.id === id);
+      res.send(movie);
+    })
+
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log("Pinged your deployment. You successfully connected to MongoDB!");

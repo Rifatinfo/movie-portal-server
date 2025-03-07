@@ -1,0 +1,57 @@
+[
+    {
+      "id" : 1,
+      "title": "The Shawshank Redemption",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/02.webp",
+      "genre": "Drama",
+      "duration": "142 min",
+      "release_year": 1994,
+      "rating": 9.3
+    },
+    {
+        "id" : 2,
+      "title": "The Dark Knight",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/01.webp",
+      "genre": "Action, Crime, Drama",
+      "duration": "152 min",
+      "release_year": 2008,
+      "rating": 9.0
+    },
+    {
+        "id" : 3,
+      "title": "Inception",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/05.webp",
+      "genre": "Action, Sci-Fi, Thriller",
+      "duration": "148 min",
+      "release_year": 2010,
+      "rating": 8.8
+    },
+    {
+        "id" : 4,
+      "title": "Fight Club",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/03.webp",
+      "genre": "Drama",
+      "duration": "139 min",
+      "release_year": 1999,
+      "rating": 8.8
+    },
+    {
+        "id" : 5,
+      "title": "Forrest Gump",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/07.webp",
+      "genre": "Drama, Romance",
+      "duration": "142 min",
+      "release_year": 1994,
+      "rating": 8.8
+    },
+    {
+        "id" : 6,
+      "title": "Interstellar",
+      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/06.webp",
+      "genre": "Adventure, Drama, Sci-Fi",
+      "duration": "169 min",
+      "release_year": 2014,
+      "rating": 8.7
+    }
+  ]
+  
