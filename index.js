@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require('express')
 const movies = require('./movieData.json')
 const cors = require('cors')
@@ -48,10 +48,39 @@ async function run() {
       const result = await cursor.toArray();
       res.send(result);
     })
+
+    app.get('/movies/:id', async (req, res) => {
+      const id = req.params.id;
+      const query = {_id: new ObjectId(id)}
+      const result = await movieCollection.findOne(query);
+      res.send(result);
+    })
+
     app.post('/movies', async (req, res) => {
       const newMovie = req.body;
       console.log(newMovie);
       const result = await movieCollection.insertOne(newMovie);
+      res.send(result);
+    })
+    
+    app.put('/movies/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = {_id : new ObjectId(id)};
+      const options = {upsert: true};
+      const updatedMovie = req.body;
+      const movie = {
+        $set : {
+          movieName : updatedMovie.movieName
+        }
+      }
+      const result = await movieCollection.updateOne(filter, movie, options);
+      res.send(result);
+    })
+
+    app.delete('/movies/:id', async(req, res) =>{
+      const id = req.params.id;
+      const query = {_id : new ObjectId(id)}
+      const result = await movieCollection.deleteOne(query);
       res.send(result);
     })
 
