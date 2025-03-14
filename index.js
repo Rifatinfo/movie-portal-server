@@ -30,10 +30,10 @@ async function run() {
     // Connect the client to the server	(optional starting in v4.7)
     await client.connect();
 
-    app.get('/movie', (req, res) => {
+    app.get('/feature-movie', (req, res) => {
       res.send(movies);
     })
-    app.get('/movie/:id', (req, res) =>{
+    app.get('/feature-movie/:id', (req, res) =>{
       const id = parseInt(req.params.id);
       const movie = movies.find(mov => mov.id === id);
       res.send(movie);

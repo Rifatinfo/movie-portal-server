@@ -2,7 +2,7 @@
     {
       "id" : 1,
       "title": "The Shawshank Redemption",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/02.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt13186482/poster//nHhjqeJcaQKOBCd21c1kV2DK5gm.jpg",
       "genre": "Drama",
       "duration": "142 min",
       "release_year": 1994,
@@ -11,7 +11,7 @@
     {
         "id" : 2,
       "title": "The Dark Knight",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/01.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt23322940/poster//z2t5PoipAZAvDR6ftNG4Cad3Tbd.jpg",
       "genre": "Action, Crime, Drama",
       "duration": "152 min",
       "release_year": 2008,
@@ -20,7 +20,7 @@
     {
         "id" : 3,
       "title": "Inception",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/05.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt18259086/poster//d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
       "genre": "Action, Sci-Fi, Thriller",
       "duration": "148 min",
       "release_year": 2010,
@@ -29,7 +29,7 @@
     {
         "id" : 4,
       "title": "Fight Club",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/03.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt7959138/poster//r2D7MkNocsqKOqGnnGEQThU26JS.jpg",
       "genre": "Drama",
       "duration": "139 min",
       "release_year": 1999,
@@ -38,7 +38,7 @@
     {
         "id" : 5,
       "title": "Forrest Gump",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/07.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt15495150/poster//y0pR5aBVvPn5uncaZjl94ZEnuEF.jpg",
       "genre": "Drama, Romance",
       "duration": "142 min",
       "release_year": 1994,
@@ -47,7 +47,7 @@
     {
         "id" : 6,
       "title": "Interstellar",
-      "poster": "https://templates.iqonic.design/streamit-dist/frontend/html/assets/images/movies/popular/06.webp",
+      "poster": "http://203.76.96.50//Admin/main/images/tt10954718/poster//Ad0ZK9wUOKjyB8J90JvMUh0TQ4E.jpg",
       "genre": "Adventure, Drama, Sci-Fi",
       "duration": "169 min",
       "release_year": 2014,
