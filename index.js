@@ -2,6 +2,7 @@ const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require('express')
 const movies = require('./movieData.json')
 const cors = require('cors')
+
 require('dotenv').config()
 
 const app = express()
@@ -76,6 +77,16 @@ async function run() {
       const result = await movieCollection.updateOne(filter, movie, options);
       res.send(result);
     })
+    app.patch('/status/:id', async (req, res) => {
+      const id = req.params.id;
+      const filter = { _id: new ObjectId(id) };
+      const update = {
+        $set: { isCompleted: true }
+      };
+    
+      const result = await movieCollection.updateOne(filter, update);
+      res.send(result);
+    });
 
     app.delete('/movies/:id', async(req, res) =>{
       const id = req.params.id;
