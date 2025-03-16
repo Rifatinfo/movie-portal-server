@@ -1,6 +1,7 @@
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 const express = require('express')
 const movies = require('./movieData.json')
+const allMovie = require('./allMovie.json')
 const cors = require('cors')
 
 require('dotenv').config()
@@ -40,6 +41,15 @@ async function run() {
       res.send(movie);
     })
 
+    // all movie
+    app.get('/all-movie', (req, res) => {
+      res.send(allMovie)
+    })
+    app.get('/all-movie/:id', (req, res) =>{
+      const id = parseInt(req.params.id);
+      const all = allMovie.find(allMov => allMov._id === id);
+      res.send(all)
+    })
     // send mongodb
     
     const movieCollection = client.db("movieDB").collection("movie");

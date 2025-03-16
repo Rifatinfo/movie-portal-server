@@ -1,0 +1,93 @@
+[
+    {
+      "_id": 1,
+      "Movie_Poster": "https://example.com/poster1.jpg",
+      "Movie_Title": "Inception",
+      "Genre": "Sci-Fi, Action",
+      "Duration": "148 min",
+      "Release_Year": 2010,
+      "Rating": 8.8
+    },
+    {
+      "_id": 2,
+      "Movie_Poster": "https://example.com/poster2.jpg",
+      "Movie_Title": "The Dark Knight",
+      "Genre": "Action, Crime, Drama",
+      "Duration": "152 min",
+      "Release_Year": 2008,
+      "Rating": 9.0
+    },
+    {
+      "_id": 3,
+      "Movie_Poster": "https://example.com/poster3.jpg",
+      "Movie_Title": "Interstellar",
+      "Genre": "Sci-Fi, Adventure, Drama",
+      "Duration": "169 min",
+      "Release_Year": 2014,
+      "Rating": 8.6
+    },
+    {
+      "_id": 4,
+      "Movie_Poster": "https://example.com/poster4.jpg",
+      "Movie_Title": "Titanic",
+      "Genre": "Romance, Drama",
+      "Duration": "195 min",
+      "Release_Year": 1997,
+      "Rating": 7.9
+    },
+    {
+      "_id": 5,
+      "Movie_Poster": "https://example.com/poster5.jpg",
+      "Movie_Title": "Avatar",
+      "Genre": "Sci-Fi, Action, Adventure",
+      "Duration": "162 min",
+      "Release_Year": 2009,
+      "Rating": 7.8
+    },
+    {
+      "_id": 6,
+      "Movie_Poster": "https://example.com/poster6.jpg",
+      "Movie_Title": "The Godfather",
+      "Genre": "Crime, Drama",
+      "Duration": "175 min",
+      "Release_Year": 1972,
+      "Rating": 9.2
+    },
+    {
+      "_id": 7,
+      "Movie_Poster": "https://example.com/poster7.jpg",
+      "Movie_Title": "Forrest Gump",
+      "Genre": "Drama, Romance",
+      "Duration": "142 min",
+      "Release_Year": 1994,
+      "Rating": 8.8
+    },
+    {
+      "_id": 8,
+      "Movie_Poster": "https://example.com/poster8.jpg",
+      "Movie_Title": "The Matrix",
+      "Genre": "Sci-Fi, Action",
+      "Duration": "136 min",
+      "Release_Year": 1999,
+      "Rating": 8.7
+    },
+    {
+      "_id": 9,
+      "Movie_Poster": "https://example.com/poster9.jpg",
+      "Movie_Title": "The Shawshank Redemption",
+      "Genre": "Drama",
+      "Duration": "142 min",
+      "Release_Year": 1994,
+      "Rating": 9.3
+    },
+    {
+      "_id": 10,
+      "Movie_Poster": "https://example.com/poster10.jpg",
+      "Movie_Title": "Gladiator",
+      "Genre": "Action, Drama",
+      "Duration": "155 min",
+      "Release_Year": 2000,
+      "Rating": 8.5
+    }
+  ]
+  
