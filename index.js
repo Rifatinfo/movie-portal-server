@@ -53,13 +53,14 @@ async function run() {
     // send mongodb
     
     const movieCollection = client.db("movieDB").collection("movie");
+    const favouritMovieCollection = client.db("MyfavouritmovieDB").collection("favouritMovie");
     
     app.get('/movies', async (req, res) => {
       const cursor = movieCollection.find();
       const result = await cursor.toArray();
       res.send(result);
     })
-
+                        
     app.get('/movies/:id', async (req, res) => {
       const id = req.params.id;
       const query = {_id: new ObjectId(id)}
@@ -102,6 +103,18 @@ async function run() {
       const id = req.params.id;
       const query = {_id : new ObjectId(id)}
       const result = await movieCollection.deleteOne(query);
+      res.send(result);
+    })
+
+    app.post('/my-favourite', async (req, res) => {
+      const favourite = req.body;
+      console.log(favourite);
+      const result = await favouritMovieCollection.insertOne(favourite);
+      res.send(result);
+    })
+    app.get('/my-favourite', async (req, res) =>{
+      const cursor = favouritMovieCollection.find();
+      const result = await cursor.toArray();
       res.send(result);
     })
 
