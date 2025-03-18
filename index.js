@@ -1,4 +1,4 @@
-const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
+const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb')
 const express = require('express')
 const movies = require('./movieData.json')
 const allMovie = require('./allMovie.json')
@@ -7,7 +7,7 @@ const cors = require('cors')
 require('dotenv').config()
 
 const app = express()
-const port = process.env.PORT ||  5000
+const port = process.env.PORT || 5000
 app.use(cors())
 app.use(express.json())
 
@@ -35,7 +35,7 @@ async function run() {
     app.get('/feature-movie', (req, res) => {
       res.send(movies);
     })
-    app.get('/feature-movie/:id', (req, res) =>{
+    app.get('/feature-movie/:id', (req, res) => {
       const id = parseInt(req.params.id);
       const movie = movies.find(mov => mov.id === id);
       res.send(movie);
@@ -45,25 +45,25 @@ async function run() {
     app.get('/all-movie', (req, res) => {
       res.send(allMovie)
     })
-    app.get('/all-movie/:id', (req, res) =>{
+    app.get('/all-movie/:id', (req, res) => {
       const id = parseInt(req.params.id);
       const all = allMovie.find(allMov => allMov._id === id);
       res.send(all)
     })
     // send mongodb
-    
+
     const movieCollection = client.db("movieDB").collection("movie");
     const favouritMovieCollection = client.db("MyfavouritmovieDB").collection("favouritMovie");
-    
+
     app.get('/movies', async (req, res) => {
       const cursor = movieCollection.find();
       const result = await cursor.toArray();
       res.send(result);
     })
-                        
+
     app.get('/movies/:id', async (req, res) => {
       const id = req.params.id;
-      const query = {_id: new ObjectId(id)}
+      const query = { _id: new ObjectId(id) }
       const result = await movieCollection.findOne(query);
       res.send(result);
     })
@@ -74,15 +74,15 @@ async function run() {
       const result = await movieCollection.insertOne(newMovie);
       res.send(result);
     })
-    
+
     app.put('/movies/:id', async (req, res) => {
       const id = req.params.id;
-      const filter = {_id : new ObjectId(id)};
-      const options = {upsert: true};
+      const filter = { _id: new ObjectId(id) };
+      const options = { upsert: true };
       const updatedMovie = req.body;
       const movie = {
-        $set : {
-          movieName : updatedMovie.movieName
+        $set: {
+          movieName: updatedMovie.movieName
         }
       }
       const result = await movieCollection.updateOne(filter, movie, options);
@@ -94,14 +94,14 @@ async function run() {
       const update = {
         $set: { isCompleted: true }
       };
-    
+
       const result = await movieCollection.updateOne(filter, update);
       res.send(result);
     });
 
-    app.delete('/movies/:id', async(req, res) =>{
+    app.delete('/movies/:id', async (req, res) => {
       const id = req.params.id;
-      const query = {_id : new ObjectId(id)}
+      const query = { _id: new ObjectId(id) }
       const result = await movieCollection.deleteOne(query);
       res.send(result);
     })
@@ -112,11 +112,22 @@ async function run() {
       const result = await favouritMovieCollection.insertOne(favourite);
       res.send(result);
     })
-    app.get('/my-favourite', async (req, res) =>{
+    app.get('/my-favourite', async (req, res) => {
       const cursor = favouritMovieCollection.find();
       const result = await cursor.toArray();
       res.send(result);
     })
+
+    app.delete('/my-favourite/:id', async (req, res) => {
+      const id = req.params.id.trim();
+      console.log('Deleting movie with id:', id); 
+      const query = { _id: new ObjectId(id) };  
+      const result = await favouritMovieCollection.deleteOne(query);
+      console.log('Delete result:', result);  
+      res.send(result);
+    });
+
+
 
     // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
