@@ -1,7 +1,7 @@
 [
     {
       "_id": 1,
-      "Movie_Poster": "https://example.com/poster1.jpg",
+      "Movie_Poster": "https://ibb.co.com/CsKGWtPP",
       "Movie_Title": "Inception",
       "Genre": "Sci-Fi, Action",
       "Duration": "148 min",
@@ -10,7 +10,7 @@
     },
     {
       "_id": 2,
-      "Movie_Poster": "https://example.com/poster2.jpg",
+      "Movie_Poster": "https://ibb.co.com/LDDJ860v",
       "Movie_Title": "The Dark Knight",
       "Genre": "Action, Crime, Drama",
       "Duration": "152 min",
@@ -19,7 +19,7 @@
     },
     {
       "_id": 3,
-      "Movie_Poster": "https://example.com/poster3.jpg",
+      "Movie_Poster": "https://ibb.co.com/LDDJ860v",
       "Movie_Title": "Interstellar",
       "Genre": "Sci-Fi, Adventure, Drama",
       "Duration": "169 min",
@@ -28,7 +28,7 @@
     },
     {
       "_id": 4,
-      "Movie_Poster": "https://example.com/poster4.jpg",
+      "Movie_Poster": "https://ibb.co.com/yB84XwqK",
       "Movie_Title": "Titanic",
       "Genre": "Romance, Drama",
       "Duration": "195 min",
@@ -37,7 +37,7 @@
     },
     {
       "_id": 5,
-      "Movie_Poster": "https://example.com/poster5.jpg",
+      "Movie_Poster": "https://ibb.co.com/Bk5M8Sd",
       "Movie_Title": "Avatar",
       "Genre": "Sci-Fi, Action, Adventure",
       "Duration": "162 min",
@@ -46,7 +46,7 @@
     },
     {
       "_id": 6,
-      "Movie_Poster": "https://example.com/poster6.jpg",
+      "Movie_Poster": "https://ibb.co.com/ZpCHWNt1",
       "Movie_Title": "The Godfather",
       "Genre": "Crime, Drama",
       "Duration": "175 min",
@@ -55,7 +55,7 @@
     },
     {
       "_id": 7,
-      "Movie_Poster": "https://example.com/poster7.jpg",
+      "Movie_Poster": "https://ibb.co.com/yB84XwqK",
       "Movie_Title": "Forrest Gump",
       "Genre": "Drama, Romance",
       "Duration": "142 min",
@@ -64,7 +64,7 @@
     },
     {
       "_id": 8,
-      "Movie_Poster": "https://example.com/poster8.jpg",
+      "Movie_Poster": "https://ibb.co.com/LDDJ860v",
       "Movie_Title": "The Matrix",
       "Genre": "Sci-Fi, Action",
       "Duration": "136 min",
@@ -73,7 +73,7 @@
     },
     {
       "_id": 9,
-      "Movie_Poster": "https://example.com/poster9.jpg",
+      "Movie_Poster": "https://ibb.co.com/LDDJ860v",
       "Movie_Title": "The Shawshank Redemption",
       "Genre": "Drama",
       "Duration": "142 min",
@@ -82,7 +82,7 @@
     },
     {
       "_id": 10,
-      "Movie_Poster": "https://example.com/poster10.jpg",
+      "Movie_Poster": "https://ibb.co.com/ZpCHWNt1",
       "Movie_Title": "Gladiator",
       "Genre": "Action, Drama",
       "Duration": "155 min",
