@@ -141,7 +141,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-  res.send('Movie Portal')
+  res.send('Movie Portal Live')
 })
 
 app.listen(port, () => {
